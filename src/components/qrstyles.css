@@ -1,0 +1,78 @@
+/* Box Model  */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  /******************************************
+  /* Google fonts
+  /*******************************************/
+  
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+  }
+  #qrCode {
+    background-color: hsl(0, 0%, 100%);
+    width: 270px;
+    max-width: 400px;
+    border: 0;
+    border-radius: 15px;
+  }
+  .qr-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  img {
+    padding-top: 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+  }
+
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  .qr-heading {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    font-size: 21px;
+    padding: 0 20px;
+  }
+  .qr-description{
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  /* Styles for Mobile Devices (max width 375px) */
+@media (max-width: 375px) {
+    body {
+        max-height: 500px;
+        width: 150px;
+    }
+}
